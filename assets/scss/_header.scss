@@ -1,9 +1,16 @@
 // ? @@@@@@@@@@@@@@@@@@@@@@[  header start  ]@@@@@@@@@@@@@@@@@@@@@@
 @include media-breakpoint(basic) {
   .topNavbar {
+    height: 74px;
     animation-name: fixedHeaderClose;
     animation-duration: .6s;
     transition: .4s all cubic-bezier(0.25, 0.1, 0, 1.7);
+    & > .container {
+      height: 100%;
+      & > .row {
+        height: 100%;
+      }
+    }
     & .logoBox {
       & img {
         height: 25px;
@@ -58,6 +65,7 @@
       top: 0;
       animation-name: fixedHeader;
       animation-duration: .6s;
+      box-shadow: -6px -8px 20px 0px #adb5bd;
       & .logoBox {
         & img {
           // filter: brightness(100);
@@ -260,6 +268,7 @@
 
 @include media-breakpoint-down(md) {
   .topNavbar {
+    height: 64px;
     & .logoBox {
       & img {
       }

@@ -5,7 +5,7 @@
             & .contactusContainer{
                 & .contactusLeftBox{
                     & .contactusLeftBoxHead{
-                        font-size: 2.5rem;
+                        font-size: 40px;
                         font-weight: 700;
                         line-height: 1.2;
                         margin-bottom: 0.5rem;
@@ -15,7 +15,7 @@
                         font-size: 1.25rem;
                         font-weight: 500;
                         letter-spacing:-.03rem;
-                        margin-bottom: 3rem;
+                        margin-bottom: 1rem;
                         color: $black;
                     }
                     & .contactusLeftBoxName{
@@ -32,15 +32,15 @@
                         & .callimge{
                             & img{
                                 height: 15px;
-                                filter: brightness(0.6);
+                                filter: brightness(0.4);
                                 margin-right: 8px;
                             }
                         }
-                        &:hover{
-                            & img{
-                                filter: brightness(1);
+                        & a {
+                            color: $black;
+                            &:hover {
+                                color: $theme1;
                             }
-                            color: $theme1;
                         }
                     }
                     & .contactusLeftBoxMail{
@@ -51,14 +51,14 @@
                             & img{
                                 height: 14px;
                                 margin-right: 8px;
-                                filter: brightness(0.6);
+                                filter: brightness(0.4);
                             }
                         }
-                        &:hover{
-                            & img{
-                                filter: brightness(1);
+                        & a {
+                            color: $black;
+                            &:hover {
+                                color: $theme1;
                             }
-                            color: $theme1;
                         }
                     }
                     & .contactusLeftBoxLocation{
@@ -69,14 +69,8 @@
                             & img{
                                 height: 20px;
                                 margin-right: 8px;
-                                filter: brightness(0.6);
+                                filter: brightness(0.4);
                             }
-                        }
-                        &:hover{
-                            & img{
-                                filter: brightness(1);
-                            }
-                            color: $theme1;
                         }
                     }
                 }
@@ -110,8 +104,9 @@
                         }
                     }
                     & .captchaBox{
-                        width: 280px;
-                        height: 70px;
+                        // width: 280px;
+                        height: 46px;
+                        margin-bottom: 8px;
                         overflow: hidden;
                         & .captchaImg{
                             width: 100%;
