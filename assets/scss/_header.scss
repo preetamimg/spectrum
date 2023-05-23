@@ -1,7 +1,6 @@
 // ? @@@@@@@@@@@@@@@@@@@@@@[  header start  ]@@@@@@@@@@@@@@@@@@@@@@
 @include media-breakpoint(basic) {
   .topNavbar {
-    border-bottom: 1px solid $gray-400;
     animation-name: fixedHeaderClose;
     animation-duration: .6s;
     transition: .4s all cubic-bezier(0.25, 0.1, 0, 1.7);
