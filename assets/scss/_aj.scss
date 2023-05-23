@@ -83,6 +83,7 @@
             & .contant {
                 font-size: 16px;
                 line-height: 22px;
+                color: lighten($color: $black, $amount: 20);
             }
         }
     }

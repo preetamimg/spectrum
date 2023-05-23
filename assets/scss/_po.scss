@@ -26,10 +26,66 @@
     @include media-breakpoint-down(sm) {}
 // }
 
-[data-bs-theme=dark] {
     // & [data-page-name=example] {
         @include dark-media-breakpoint(basic) {
-            
+            .certificateCard {
+                // border-top: 4px solid #0f81b1;
+                position: relative;
+                transition: all 0.3s ease-in-out;
+                &::after {
+                    position: absolute;
+                    width: 100%;
+                    height: 4px;
+                    content: '';
+                    top: 0;
+                    left: 0;
+                    background-color: $theme1;
+                    z-index: 2;
+                }
+                &::before{
+                    // position: absolute;
+                    // width: 100%;
+                    // height: 100%;
+                    // background-color: rgba(0,0,0,0.5);
+                    // transition: all .3s ease-in-out;
+                    // content: "";
+                    // top: 0;
+                    // left: 0;
+                    // z-index: 1;
+                }
+                
+                & .certificateImg {
+                    height: 250px;
+                    width: 100%;
+                    // transition: all .5s;
+                    overflow: hidden;
+                    & img {
+                        aspect-ratio: 10/10;
+                        object-fit: contain;
+                        transition: all .3s ease-in-out;
+                    }
+                }
+                & .certificateContent {
+                    text-align: center;
+                    & .certiTitle {
+
+                    }
+                    & .certiName {
+
+                    }
+                }
+                &:hover {
+                    transform: translateY(-15px);
+                    &::before {
+                        background-color: rgba(0,0,0,0);
+                    }
+                    & .certificateImg {
+                        // & img {
+                        //     transform: scale(109%);
+                        // }
+                    }
+                }
+            }
         }
 
         // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
@@ -56,7 +112,6 @@
         @include dark-media-breakpoint-down(sm) {
         }
     // }
-}
 
 // ! @@@@@@@@@@@@@@@@@@@@@@[  example start  ]@@@@@@@@@@@@@@@@@@@@@@
 
