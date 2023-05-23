@@ -99,39 +99,70 @@
         <!-- style -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
         <link rel="stylesheet" href="assets/css/style.min.css" />
-        <link rel="stylesheet" href="assets/libs/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+        <link rel="stylesheet" href="assets/libs/node_modules/swiper/swiper-bundle.min.css" />
 
         <script src="assets/libs/node_modules/jquery/dist/jquery.min.js"></script>
     </head>
     <body>
         <main class="container-fluid">
             <div class="row mainInner">
-                <div class="col-12 px-0 flex-fill bg-dark" data-page-name="landing">
+                <div class="col-12 px-0 flex-fill" data-page-name="landing">
                     <nav class="topNavbar">
                     </nav>
                     <!-- Hero Section Start -->
-                    <div class="container-fluid heroSection">
+                    <div class="container-fluid heroSection px-0">
+                        <div class="row mx-0">
+                            <div class="col-12 px-0">
+                                <!-- Slider main container -->
+                                <div class="swiper hero-swiper">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+                                        <!-- Slides -->
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/hero-image/Kerfin7-NEA-2133.jpg" class="w-100 h-100" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/hero-image/row-rings-with-word-love-them.jpg" class="w-100 h-100" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/hero-image/Kerfin7-NEA-2133.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/hero-image/row-rings-with-word-love-them.jpg" class="w-100 h-100" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- If we need pagination -->
+                                    <div class="swiper-pagination"></div>
+                                
+                                    <!-- If we need navigation buttons -->
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                
+                                    <!-- If we need scrollbar -->
+                                    <div class="swiper-scrollbar"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     
                     
                     <!-- footer Start -->
                     <footer>
-                        <div class="container-fluid bg-white footerMain">
-                            <div class="container py-5 footerTop">
+                        <div class="container-fluid bg-white footerMain px-0">
+                            <div class="container py-lg-5 py-4 footerTop">
                                 <div class="row">
-                                    <div class="col-4">
+                                    <div class="col-lg-4 col-12 mb-lg-0">
                                         <div class="row">
                                             <div class="col-12">
                                                 <a href="javascript:;" class="footerLogo">
                                                     <img src="assets/img/logos/logo.png" class="h-100" alt="">
                                                 </a>
                                             </div>
-                                            <div class="col-12 mt-4 footerText">
+                                            <div class="col-12 mt-lg-4 mt-md-3 mt-2 footerText">
                                                 A leading manufacturer of disperse dyes, 
                                                 we are as rooted and in harmony with nature as we are innovative and future-facing.
                                             </div>
-                                            <div class="col-12 mt-4 socialIconsOuter">
+                                            <div class="col-12 mt-lg-4 mt-md-3 mt-2 socialIconsOuter d-none d-lg-block">
                                                 <div class="row gap-3 mx-0">
                                                     <a href="javascript:;" class="col-auto socialIcons">
                                                         <img src="assets/img/icons/facebook.svg" class="w-100 h-100" alt="">
@@ -146,8 +177,77 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-8">
-
+                                    <div class="col-lg-2 col-md-3 col-12 mt-2 mt-md-0">
+                                        <div class="row">
+                                            <div class="col-12 footerHeading mb-lg-4 mb-md-3 mb-2">
+                                                Quick Links
+                                            </div>
+                                            <div class="col-12 footerLinkOuter">
+                                                <ul>
+                                                    <li><a href="javascript:;" class="footerLinks">About us</a></li>
+                                                    <li><a href="javascript:;" class="footerLinks">Vision & Mission</a></li>
+                                                    <li><a href="javascript:;" class="footerLinks">CSR</a></li>
+                                                    <li><a href="javascript:;" class="footerLinks">Certifications & Memberships</a></li>
+                                                    <li><a href="javascript:;" class="footerLinks">Product Profile</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-12 mt-2 mt-md-0">
+                                        <div class="row">
+                                            <div class="col-12 footerHeading mb-lg-4 mb-md-3 mb-2 invisible d-none d-md-block">
+                                                Support
+                                            </div>
+                                            <div class="col-12 footerLinkOuter">
+                                                <ul>
+                                                    <li><a href="javascript:;" class="footerLinks">Laboratory</a></li>
+                                                    <li><a href="javascript:;" class="footerLinks">Eco Lab</a></li>
+                                                    <li><a href="javascript:;" class="footerLinks">R&D</a></li>
+                                                    <li><a href="javascript:;" class="footerLinks">Technical Services</a></li>
+                                                    <li><a href="javascript:;" class="footerLinks">Cotnact us</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12 mt-2 mt-md-0">
+                                        <div class="row">
+                                            <div class="col-12 footerHeading mb-lg-4 mb-md-3 mb-2">
+                                                Get in touch
+                                            </div>
+                                            <div class="col-12 footerText mb-2">
+                                                Block Nos. 484, 502, 503A, 504, 505A, 481A, 483,
+                                                National Highway No. 8, Palsana - 394315,
+                                                Surat, Gujarat, India
+                                            </div>
+                                            <div class="col-12 footerText mb-2">
+                                                Email: <a href="mailto:info@spectrumdyes.com" class="text-theme1">info@spectrumdyes.com</a>
+                                            </div>
+                                            <div class="col-12 footerText">
+                                                Phone: <a href="tel:+9198244 07575" class="fw-bold text-black">+91 98244 07575,</a> 
+                                                <a href="tel:+919824589088" class="fw-bold text-black">+91 98245 89088</a>
+                                            </div>
+                                            <div class="col-12 mt-lg-4 mt-3 socialIconsOuter d-lg-none">
+                                                <div class="row gap-3 mx-0">
+                                                    <a href="javascript:;" class="col-auto socialIcons">
+                                                        <img src="assets/img/icons/facebook.svg" class="w-100 h-100" alt="">
+                                                    </a>
+                                                    <a href="javascript:;" class="col-auto socialIcons">
+                                                        <img src="assets/img/icons/twitter.svg" class="w-100 h-100" alt="">
+                                                    </a>
+                                                    <a href="javascript:;" class="col-auto socialIcons">
+                                                        <img src="assets/img/icons/instagram.svg" class="w-100 h-100" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container footerBottom">
+                                <div class="row mx-0">
+                                    <div class="col-12 text-center footerText border-top py-3">
+                                        © 2023 Spectrum Dyes & Chemicals Pvt. Ltd. All rights reserved. 
+                                        <!-- Website Designed By: <a href="https://www.imgglobalinfotech.com/" class="text-black">IMG GLOBAL INFOTECH</a> -->
                                     </div>
                                 </div>
                             </div>
@@ -162,54 +262,30 @@
       
 
         <script src="assets/libs/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/libs/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+        <script src="assets/libs/node_modules/swiper/swiper-bundle.min.js"></script>
         <script type="module" src="assets/js/main.min.js"></script>
         <script>
-            // $(document).ready(function(){
-            // $(".hero-carousel").owlCarousel({
-            //     loop: false,
-            //     items: 7,
-            //     margin: 20,
-            //     nav: false,
-            //     dots: true,
-            //     autoplay: false,
-            //     center: false,
-            //     freeDrag: false,
-            //     lazyLoad: true,
-            //     autoplayTimeout: 5000,
-            //     autoplayHoverPause: true,
-            //     smartSpeed: 3800,
-            //     responsiveClass: true,
-            //     animateIn: 'fadeIn',
-            //     animateOut: 'fadeOut',
-            //     responsive: {
-            //         0: {
-            //             items: 1,
-            //             autoplay: true,
-            //             loop: true,
-            //             autoplayTimeout: 10000,
-            //             touchDrag: false,
-            //         },
-            //         576: {
-            //             items: 1,
-            //         },
-            //         768: {
-            //         items: 1,
-            //         },
-            //         992: {
-            //         items: 1,
-            //         },
-            //         1200: {
-            //         items: 1,
-            //         autoplay: true,
-            //         loop: true,
-            //         autoplayTimeout: 5000,
-            //         smartSpeed: 4800,
-            //     },
-            //     },
-            //     // navText: ["", ""]
-            // });
-            // });
-            </script>
+            const swiper = new Swiper('.hero-swiper', {
+                // Optional parameters
+                // direction: 'vertical',
+                loop: true,
+
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+                // And if we need scrollbar
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                },
+            });
+        </script>
     </body>
 </html>
