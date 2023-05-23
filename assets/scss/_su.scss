@@ -1,6 +1,57 @@
 // ? @@@@@@@@@@@@@@@@@@@@@@[  example start  ]@@@@@@@@@@@@@@@@@@@@@@
 // [data-page-name=example] {
     @include media-breakpoint(basic) {
+        .heroSection {
+            height: calc(100vh - 58.13px);
+            overflow: hidden;
+            & .hero-swiper {
+                & .swiper-wrapper {
+                    & .swiper-slide {
+                        position: relative;
+                        & .slideBox {
+                            // z-index: 0;
+                            transform: translateX(-50%);
+                            & .secHeading {
+                                font-size: 48px;
+                                font-weight: 700;
+                                color: $white;
+                                line-height: 145%;
+                            }
+                            & .secText {
+                                font-size: 22px;
+                                font-weight: 500;
+                                color: $white;
+                            }
+                        }
+                        & img {
+                            object-fit: cover;
+                        }
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            background-color: rgba(0,0,0,0.4);
+                            // z-index: 1;
+                        }
+                    }
+                }
+                & .swiper-pagination {
+                    & .swiper-pagination-bullet {
+                        width: 30px;
+                        height: 4px;
+                        background-color: rgba(255,255,255,1);
+                        border-radius: 0;
+                        opacity: 0.5 !important;
+                        &.swiper-pagination-bullet-active {
+                            opacity: 1 !important;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
@@ -17,13 +68,125 @@
 
     @include media-breakpoint-down(xxl) {}
 
-    @include media-breakpoint-down(xl) {}
+    @include media-breakpoint-down(xl) {
+        .heroSection {
+            & .hero-swiper {
+                & .swiper-wrapper {
+                    & .swiper-slide {
+                        & .slideBox {
+                            & .secHeading {
+                                font-size: 40px;
+                            }
+                            & .secText {
+                                font-size: 20px;
+                            }
+                        }
+                        & img {
+                        }
+                        &::before {
+                        }
+                    }
+                }
+                & .swiper-pagination {
+                    & .swiper-pagination-bullet {
+                        &.swiper-pagination-bullet-active {
+                        }
+                    }
+                }
+            }
+        }
+    }
 
-    @include media-breakpoint-down(lg) {}
+    @include media-breakpoint-down(lg) {
+        .heroSection {
+            height: 380px;
+            & .hero-swiper {
+                & .swiper-wrapper {
+                    & .swiper-slide {
+                        & .slideBox {
+                            & .secHeading {
+                                font-size: 30px;
+                            }
+                            & .secText {
+                                font-size: 16px;
+                            }
+                        }
+                        & img {
+                        }
+                        &::before {
+                        }
+                    }
+                }
+                & .swiper-pagination {
+                    & .swiper-pagination-bullet {
+                        &.swiper-pagination-bullet-active {
+                        }
+                    }
+                }
+            }
+        }
+    }
 
-    @include media-breakpoint-down(md) {}
+    @include media-breakpoint-down(md) {
+        .heroSection {
+            height: 320px;
+            & .hero-swiper {
+                & .swiper-wrapper {
+                    & .swiper-slide {
+                        & .slideBox {
+                            & .secHeading {
+                                font-size: 24px;
+                            }
+                            & .secText {
+                                font-size: 15px;
+                            }
+                        }
+                        & img {
+                        }
+                        &::before {
+                        }
+                    }
+                }
+                & .swiper-pagination {
+                    & .swiper-pagination-bullet {
+                        &.swiper-pagination-bullet-active {
+                        }
+                    }
+                }
+            }
+        }
+    }
 
-    @include media-breakpoint-down(sm) {}
+    @include media-breakpoint-down(sm) {
+        .heroSection {
+            height: 230px;
+            & .hero-swiper {
+                & .swiper-wrapper {
+                    & .swiper-slide {
+                        & .slideBox {
+                            & .secHeading {
+                                font-size: 18px;
+                            }
+                            & .secText {
+                                font-size: 12px;
+                            }
+                        }
+                        & img {
+                        }
+                        &::before {
+                        }
+                    }
+                }
+                & .swiper-pagination {
+                    display: none;
+                    & .swiper-pagination-bullet {
+                        &.swiper-pagination-bullet-active {
+                        }
+                    }
+                }
+            }
+        }
+    }
 // }
 
 [data-bs-theme=dark] {
