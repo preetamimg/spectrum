@@ -55,6 +55,7 @@
     &.nav-active {
       background-color: $white;
       position: sticky;
+      z-index: 9;
       top: 0;
       animation-name: fixedHeader;
       animation-duration: .6s;
