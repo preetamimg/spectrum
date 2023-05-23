@@ -1,0 +1,245 @@
+// ? @@@@@@@@@@@@@@@@@@@@@@[  header start  ]@@@@@@@@@@@@@@@@@@@@@@
+@include media-breakpoint(basic) {
+  .footerMain {
+    & .footerTop {
+      & .footerLogo {
+        height: 30px;
+        display: inline-block;
+      }
+      & .footerText {
+        font-size: 14px;
+        color: $black;
+        max-width: 80%;
+      }
+      & .socialIconsOuter {
+        & .socialIcons {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 18px;
+          height: 18px;
+          padding: 0;
+          & img {
+            transition: all 0.3s ease-in-out;
+          }
+          &:hover {
+            & img {
+              filter: brightness(0.7);
+              transform: scale(1.2);
+            }
+          }
+        }
+      }
+      & .footerHeading {
+        color: $black;
+        font-size: 18px;
+        font-weight: 700;
+      }
+      & .footerLinkOuter {
+        & ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          & li {
+            margin-bottom: 8px;
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+        & .footerLinks {
+          color: $black;
+          font-size: 14px;
+          font-weight: 400;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            color: $theme1;
+          }
+        }
+      }
+    }
+    & .footerBottom {
+      & .footerText {
+        color: $black;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+// No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {
+  .footerMain {
+    & .footerTop {
+      & .footerLogo {
+      }
+      & .footerText {
+        max-width: 90%;
+      }
+      & .socialIconsOuter {
+        & .socialIcons {
+          & img {
+          }
+          &:hover {
+            & img {
+            }
+          }
+        }
+      }
+      & .footerHeading {
+      }
+      & .footerLinkOuter {
+        & ul {
+          & li {
+            &:last-child {
+            }
+          }
+        }
+        & .footerLinks {
+          &:hover {
+          }
+        }
+      }
+    }
+    & .footerBottom {
+      & .footerText {
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .footerMain {
+    & .footerTop {
+      & .footerLogo {
+        height: 20px;
+      }
+      & .footerText {
+        max-width: 100%;
+      }
+      & .socialIconsOuter {
+        & .socialIcons {
+          & img {
+          }
+          &:hover {
+            & img {
+            }
+          }
+        }
+      }
+      & .footerHeading {
+        font-size: 16px;
+      }
+      & .footerLinkOuter {
+        & ul {
+          & li {
+            &:last-child {
+            }
+          }
+        }
+        & .footerLinks {
+          &:hover {
+          }
+        }
+      }
+    }
+    & .footerBottom {
+      & .footerText {
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .footerMain {
+    & .footerTop {
+      & .footerLogo {
+        height: 20px;
+      }
+      & .footerText {
+      }
+      & .socialIconsOuter {
+        & .socialIcons {
+          & img {
+          }
+          &:hover {
+            & img {
+            }
+          }
+        }
+      }
+      & .footerHeading {
+        font-size: 16px;
+      }
+      & .footerLinkOuter {
+        & ul {
+          & li {
+            margin-bottom: 6px;
+            &:last-child {
+            }
+          }
+        }
+        & .footerLinks {
+          &:hover {
+          }
+        }
+      }
+    }
+    & .footerBottom {
+      & .footerText {
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {}
+
+[data-bs-theme=dark] {
+  @include dark-media-breakpoint(basic) {
+    
+  }
+
+  // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+  @include dark-media-breakpoint-up(sm) {
+  }
+  @include dark-media-breakpoint-up(md) {
+  }
+  @include dark-media-breakpoint-up(lg) {
+  }
+  @include dark-media-breakpoint-up(xl) {
+  }
+  @include dark-media-breakpoint-up(xxl) {
+  }
+
+
+  @include dark-media-breakpoint-down(xxl) {
+  }
+  @include dark-media-breakpoint-down(xl) {
+  }
+  @include dark-media-breakpoint-down(lg) {
+  }
+  @include dark-media-breakpoint-down(md) {
+  }
+  @include dark-media-breakpoint-down(sm) {
+  }
+}
+// ! @@@@@@@@@@@@@@@@@@@@@@[  header start  ]@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+
+
+
