@@ -106,36 +106,35 @@
     <body>
         <main class="container-fluid">
             <div class="row mainInner">
-                <div class="col-12 px-0 flex-fill" data-page-name="landing">
+                <div class="col-12 px-0 flex-fill bodyScrollPart" data-page-name="landing">
                     <nav class="topNavbar">
-                        <div class="container-fluid py-3 bg-theme1">
+                        <div class="container py-3">
                             <div class="row align-items-center">
                                 <div class="col-auto">
                                     <a href="index.html" class="logoBox">
                                         <img src="./assets/img/logos/logo.png" alt="spectrum logo">
                                     </a>
                                 </div>
-                                <div class="col">
-                                    <ul class="m-0 p-0 list-unstyled d-flex align-items-center justify-content-end gap-2">
-                                        <li class="navLink"><a class="navAnchor" href="javascript:;">About Us</a></li>
-                                        <li class="navLink"><a class="navAnchor" href="javascript:;">Vision & Mission</a></li>
+                                <div class="col d-flex justify-content-end">
+                                    <ul class="m-0 p-0 navLinks list-unstyled d-none d-lg-flex align-items-center justify-content-end">
+                                        <li class="navLink"><a class="navAnchor active" href="javascript:;">About Us</a></li>
+                                        <!-- <li class="navLink"><a class="navAnchor" href="javascript:;">Vision & Mission</a></li> -->
                                         <li class="navLink"><a class="navAnchor" href="javascript:;">CSR</a></li>
-                                        <li class="navLink"><a class="navAnchor" href="javascript:;">Certifications & Memberships</a></li>
-                                        <li class="navLink"><a class="navAnchor" href="javascript:;">Product Profile</a></li>
-                                        <li class="navLink"><a class="navAnchor" href="javascript:;">Laboratory</a></li>
+                                        <!-- <li class="navLink"><a class="navAnchor" href="javascript:;">Certifications & Memberships</a></li> -->
+                                        <!-- <li class="navLink"><a class="navAnchor" href="javascript:;">Product Profile</a></li> -->
+                                        <!-- <li class="navLink"><a class="navAnchor" href="javascript:;">Laboratory</a></li> -->
                                         <li class="navLink"><a class="navAnchor" href="javascript:;">ECO LAB</a></li>
                                         <li class="navLink"><a class="navAnchor" href="javascript:;">R&D</a></li>
                                         <li class="navLink"><a class="navAnchor" href="javascript:;">Technical Services</a></li>
                                         <li class="navLink"><a class="navAnchor" href="javascript:;">Contact Us</a></li>
                                     </ul>
+                                    <div class="menuIcon d-inline-block d-lg-none ms-auto" data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas" aria-controls="menuOffcanvas">
+                                        <img src="./assets/img/menuIcon.svg" alt="menu icon">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </nav>
-                    <!-- Hero Section Start -->
-                    <div class="container-fluid heroSection">
-                        </div>
-                    </div>
                     
                     
                     <!-- footer Start -->
@@ -146,58 +145,42 @@
                 </div>
             </div>
         </main>
-
-      
+        <!-- menu offcanvas -->
+        <div class="offcanvas offcanvas-start menuOffcanvas" tabindex="-1" id="menuOffcanvas" aria-labelledby="menuOffcanvasLabel">
+            <div class="offcanvas-header">
+                <div class="offcanvas-title" id="menuOffcanvasLabel">
+                    <img src="./assets/img/logos/logo.png" alt="spectrum logo">
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="m-0 p-0 offcanvasLinks list-unstyled">
+                    <li class="offcanvasLink pb-2"><a class="offcanvasAnchor active" href="javascript:;">About Us</a></li>
+                    <li class="offcanvasLink py-2"><a class="offcanvasAnchor" href="javascript:;">Vision & Mission</a></li>
+                    <li class="offcanvasLink py-2"><a class="offcanvasAnchor" href="javascript:;">CSR</a></li>
+                    <li class="offcanvasLink py-2"><a class="offcanvasAnchor" href="javascript:;">Certifications & Memberships</a></li>
+                    <li class="offcanvasLink py-2"><a class="offcanvasAnchor" href="javascript:;">Product Profile</a></li>
+                    <li class="offcanvasLink py-2"><a class="offcanvasAnchor" href="javascript:;">Laboratory</a></li>
+                    <li class="offcanvasLink py-2"><a class="offcanvasAnchor" href="javascript:;">ECO LAB</a></li>
+                    <li class="offcanvasLink py-2"><a class="offcanvasAnchor" href="javascript:;">R&D</a></li>
+                    <li class="offcanvasLink py-2"><a class="offcanvasAnchor" href="javascript:;">Technical Services</a></li>
+                    <li class="offcanvasLink py-2"><a class="offcanvasAnchor" href="javascript:;">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
 
         <script src="assets/libs/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="assets/libs/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
         <script type="module" src="assets/js/main.min.js"></script>
         <script>
-            // $(document).ready(function(){
-            // $(".hero-carousel").owlCarousel({
-            //     loop: false,
-            //     items: 7,
-            //     margin: 20,
-            //     nav: false,
-            //     dots: true,
-            //     autoplay: false,
-            //     center: false,
-            //     freeDrag: false,
-            //     lazyLoad: true,
-            //     autoplayTimeout: 5000,
-            //     autoplayHoverPause: true,
-            //     smartSpeed: 3800,
-            //     responsiveClass: true,
-            //     animateIn: 'fadeIn',
-            //     animateOut: 'fadeOut',
-            //     responsive: {
-            //         0: {
-            //             items: 1,
-            //             autoplay: true,
-            //             loop: true,
-            //             autoplayTimeout: 10000,
-            //             touchDrag: false,
-            //         },
-            //         576: {
-            //             items: 1,
-            //         },
-            //         768: {
-            //         items: 1,
-            //         },
-            //         992: {
-            //         items: 1,
-            //         },
-            //         1200: {
-            //         items: 1,
-            //         autoplay: true,
-            //         loop: true,
-            //         autoplayTimeout: 5000,
-            //         smartSpeed: 4800,
-            //     },
-            //     },
-            //     // navText: ["", ""]
-            // });
-            // });
-            </script>
+            $('.bodyScrollPart').scroll(function () {
+                var scroll = $('.bodyScrollPart').scrollTop();
+                if (scroll <= 120) {
+                    $(".topNavbar").removeClass("nav-active");
+                } else {
+                    $(".topNavbar").addClass("nav-active");
+                }
+            });
+        </script>
     </body>
 </html>
