@@ -1,6 +1,147 @@
 // ? @@@@@@@@@@@@@@@@@@@@@@[  example start  ]@@@@@@@@@@@@@@@@@@@@@@
 // [data-page-name=example] {
     @include media-breakpoint(basic) {
+        .contactusFluid{
+            & .contactusContainer{
+                & .contactusLeftBox{
+                    & .contactusLeftBoxHead{
+                        font-size: 2.5rem;
+                        font-weight: 700;
+                        line-height: 1.2;
+                        margin-bottom: 0.5rem;
+                        color: $black;
+                    }
+                    & .contactusLeftBoxPara{
+                        font-size: 1.25rem;
+                        font-weight: 500;
+                        letter-spacing:-.03rem;
+                        margin-bottom: 3rem;
+                        color: $black;
+                    }
+                    & .contactusLeftBoxName{
+                        font-size: 16px;
+                        color: $black;
+                    }
+                    & .contactusLeftBoxSubName{
+                        color: $black;
+                    }
+                    & .contactusLeftBoxCall{
+                        color: $black;
+                        transition: 0.3s linear;
+                        font-size: 14px;
+                        & .callimge{
+                            & img{
+                                height: 15px;
+                                filter: brightness(0.6);
+                                margin-right: 8px;
+                            }
+                        }
+                        &:hover{
+                            & img{
+                                filter: brightness(1);
+                            }
+                            color: $theme1;
+                        }
+                    }
+                    & .contactusLeftBoxMail{
+                        color: $black;
+                        font-size: 14px;
+                        transition: 0.3s linear;
+                        & .mailImg{
+                            & img{
+                                height: 14px;
+                                margin-right: 8px;
+                                filter: brightness(0.6);
+                            }
+                        }
+                        &:hover{
+                            & img{
+                                filter: brightness(1);
+                            }
+                            color: $theme1;
+                        }
+                    }
+                    & .contactusLeftBoxLocation{
+                        color: $black;
+                        transition: 0.3s linear;
+                        font-size: 14px;
+                        & .locationImg{
+                            & img{
+                                height: 20px;
+                                margin-right: 8px;
+                                filter: brightness(0.6);
+                            }
+                        }
+                        &:hover{
+                            & img{
+                                filter: brightness(1);
+                            }
+                            color: $theme1;
+                        }
+                    }
+                }
+                & .contactusRightBox{
+                    & .formLbl{
+                        margin-bottom: 0.5rem;
+                        font-size: .875rem;
+                        color: $black;
+                        margin-bottom: 0.5rem;
+                    }
+                    & .formInp{
+                        margin-bottom: 0.5rem;
+                        font-size: .875rem;
+                        color: #1e2022;
+                        font-weight: 400;
+                        border-color: $gray-300;
+                        // padding-left: 15px;
+                        padding: .75rem 1rem;
+                    }
+                    & .formTextarea{
+                        border-color: $gray-300;
+                        width: 100%;
+                        padding-left: 18px;
+                        font-size: .875rem;
+                        color: #1e2022;
+                        font-weight: 400;                       
+                        padding: .75rem 1rem;
+                        height: 80px;
+                        &:focus{
+                            outline: unset;
+                        }
+                    }
+                    & .captchaBox{
+                        width: 280px;
+                        height: 70px;
+                        overflow: hidden;
+                        & .captchaImg{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    & .reloadBtn{
+                        border: none;
+                        background-color: transparent;
+                        & img{
+                            height: 20px;
+                        }
+                    }
+                    & .submitBtn{
+                        background-color: $theme1;
+                        color: $white;
+                        font-size: 16px;
+                        font-weight: 400;
+                        border: none;
+                        width: 100%;
+                        padding: 10px 0;
+                        border-radius: 5px;
+                        &:hover{
+                            opacity: 0.9;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
@@ -15,15 +156,358 @@
     @include media-breakpoint-up(xxl) {}
 
 
-    @include media-breakpoint-down(xxl) {}
+    @include media-breakpoint-down(xxl) {
+        .contactusFluid{
+            & .contactusContainer{
+                & .contactusLeftBox{
+                    & .contactusLeftBoxHead{
+                    }
+                    & .contactusLeftBoxPara{
+                    }
+                    & .contactusLeftBoxName{
+                    }
+                    & .contactusLeftBoxSubName{
+                    }
+                    & .contactusLeftBoxCall{
+                        & .callimge{
+                            & img{
+                            }
+                        }
+                        &:hover{
+                            & img{
+                            }
+                        }
+                    }
+                    & .contactusLeftBoxMail{
+                        & .mailImg{
+                            & img{
+                            }
+                        }
+                        &:hover{
+                            & img{
+                            }
+                        }
+                    }
+                    & .contactusLeftBoxLocation{
+                        & .locationImg{
+                            & img{
+                            }
+                        }
+                        &:hover{
+                            & img{
+                            }
+                        }
+                    }
+                }
+                & .contactusRightBox{
+                    & .formLbl{
+                    }
+                    & .formInp{
+                    }
+                    & .formTextarea{
+                        &:focus{
+                        }
+                    }
+                    & .captchaBox{
+                        & .captchaImg{
+                        }
+                    }
+                    & .reloadBtn{
+                        & img{
+                        }
+                    }
+                    & .submitBtn{
+                        &:hover{
+                        }
+                    }
+                }
+            }
+        }
+    }
 
-    @include media-breakpoint-down(xl) {}
+    @include media-breakpoint-down(xl) {
+        .contactusFluid{
+            & .contactusContainer{
+                & .contactusLeftBox{
+                    & .contactusLeftBoxHead{
+                    }
+                    & .contactusLeftBoxPara{
+                    }
+                    & .contactusLeftBoxName{
+                    }
+                    & .contactusLeftBoxSubName{
+                    }
+                    & .contactusLeftBoxCall{
+                        & .callimge{
+                            & img{
+                            }
+                        }
+                        &:hover{
+                            & img{
+                            }
+                        }
+                    }
+                    & .contactusLeftBoxMail{
+                        & .mailImg{
+                            & img{
+                            }
+                        }
+                        &:hover{
+                            & img{
+                            }
+                        }
+                    }
+                    & .contactusLeftBoxLocation{
+                        & .locationImg{
+                            & img{
+                            }
+                        }
+                        &:hover{
+                            & img{
+                            }
+                        }
+                    }
+                }
+                & .contactusRightBox{
+                    & .formLbl{
+                    }
+                    & .formInp{
+                    }
+                    & .formTextarea{
+                        &:focus{
+                        }
+                    }
+                    & .captchaBox{
+                        & .captchaImg{
+                        }
+                    }
+                    & .reloadBtn{
+                        & img{
+                        }
+                    }
+                    & .submitBtn{
+                        &:hover{
+                        }
+                    }
+                }
+            }
+        }
+    }
 
-    @include media-breakpoint-down(lg) {}
+    @include media-breakpoint-down(lg) {
+        .contactusFluid{
+            & .contactusContainer{
+                & .contactusLeftBox{
+                    & .contactusLeftBoxHead{
+                    }
+                    & .contactusLeftBoxPara{
+                    }
+                    & .contactusLeftBoxName{
+                    }
+                    & .contactusLeftBoxSubName{
+                    }
+                    & .contactusLeftBoxCall{
+                        & .callimge{
+                            & img{
+                            }
+                        }
+                        &:hover{
+                            & img{
+                            }
+                        }
+                    }
+                    & .contactusLeftBoxMail{
+                        & .mailImg{
+                            & img{
+                            }
+                        }
+                        &:hover{
+                            & img{
+                            }
+                        }
+                    }
+                    & .contactusLeftBoxLocation{
+                        & .locationImg{
+                            & img{
+                            }
+                        }
+                        &:hover{
+                            & img{
+                            }
+                        }
+                    }
+                }
+                & .contactusRightBox{
+                    & .formLbl{
+                    }
+                    & .formInp{
+                    }
+                    & .formTextarea{
+                        &:focus{
+                        }
+                    }
+                    & .captchaBox{
+                        & .captchaImg{
+                        }
+                    }
+                    & .reloadBtn{
+                        & img{
+                        }
+                    }
+                    & .submitBtn{
+                        &:hover{
+                        }
+                    }
+                }
+            }
+        }
+    }
 
-    @include media-breakpoint-down(md) {}
+    @include media-breakpoint-down(md) {
+        .contactusFluid{
+            & .contactusContainer{
+                & .contactusLeftBox{
+                    & .contactusLeftBoxHead{
+                    }
+                    & .contactusLeftBoxPara{
+                    }
+                    & .contactusLeftBoxName{
+                    }
+                    & .contactusLeftBoxSubName{
+                    }
+                    & .contactusLeftBoxCall{
+                        & .callimge{
+                            & img{
+                            }
+                        }
+                        &:hover{
+                            & img{
+                            }
+                        }
+                    }
+                    & .contactusLeftBoxMail{
+                        & .mailImg{
+                            & img{
+                            }
+                        }
+                        &:hover{
+                            & img{
+                            }
+                        }
+                    }
+                    & .contactusLeftBoxLocation{
+                        & .locationImg{
+                            & img{
+                            }
+                        }
+                        &:hover{
+                            & img{
+                            }
+                        }
+                    }
+                }
+                & .contactusRightBox{
+                    & .formLbl{
+                    }
+                    & .formInp{
+                    }
+                    & .formTextarea{
+                        &:focus{
+                        }
+                    }
+                    & .captchaBox{
+                        & .captchaImg{
+                        }
+                    }
+                    & .reloadBtn{
+                        & img{
+                        }
+                    }
+                    & .submitBtn{
+                        &:hover{
+                        }
+                    }
+                }
+            }
+        }
+    }
 
-    @include media-breakpoint-down(sm) {}
+    @include media-breakpoint-down(sm) {
+        .contactusFluid{
+            & .contactusContainer{
+                & .contactusLeftBox{
+                    & .contactusLeftBoxHead{
+                        font-size: 25px;
+                    }
+                    & .contactusLeftBoxPara{
+                        font-size: 16px;
+                        margin-bottom: 2rem;
+                    }
+                    & .contactusLeftBoxName{
+                        font-size: 14px;
+                    }
+                    & .contactusLeftBoxSubName{
+                        font-size: 14px;
+                    }
+                    & .contactusLeftBoxCall{
+                        font-size: 13px;
+                        & .callimge{
+                            & img{
+                            }
+                        }
+                        &:hover{
+                            & img{
+                            }
+                        }
+                    }
+                    & .contactusLeftBoxMail{
+                        font-size: 13px;
+                        & .mailImg{
+                            & img{
+                            }
+                        }
+                        &:hover{
+                            & img{
+                            }
+                        }
+                    }
+                    & .contactusLeftBoxLocation{
+                        font-size: 13px;
+                        & .locationImg{
+                            & img{
+                            }
+                        }
+                        &:hover{
+                            & img{
+                            }
+                        }
+                    }
+                }
+                & .contactusRightBox{
+                    & .formLbl{
+                    }
+                    & .formInp{
+                    }
+                    & .formTextarea{
+                        &:focus{
+                        }
+                    }
+                    & .captchaBox{
+                        & .captchaImg{
+                        }
+                    }
+                    & .reloadBtn{
+                        & img{
+                        }
+                    }
+                    & .submitBtn{
+                        &:hover{
+                        }
+                    }
+                }
+            }
+        }
+    }
 // }
 
 [data-bs-theme=dark] {
