@@ -53,30 +53,30 @@
       }
     }
     &.nav-active {
-      background-color: $theme1;
+      background-color: $white;
       position: sticky;
       top: 0;
       animation-name: fixedHeader;
       animation-duration: .6s;
       & .logoBox {
         & img {
-          filter: brightness(100);
+          // filter: brightness(100);
         }
       }
       & .navLinks {
         & .navLink {
           & .navAnchor {
-            color: $white;
+            // color: $white;
             &::before {
-              background-color: $white;
-              opacity: 0.9;
+              // background-color: $white;
+              // opacity: 0.9;
             }
           }
         }
       }
       & .menuIcon {
         & img {
-          filter: brightness(100);
+          // filter: brightness(100);
         }
       }
     }
