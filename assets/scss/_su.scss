@@ -2,7 +2,7 @@
 // [data-page-name=example] {
     @include media-breakpoint(basic) {
         .heroSection {
-            height: calc(100vh - 58.13px);
+            height: calc(100vh - 74px);
             overflow: hidden;
             & .hero-swiper {
                 & .swiper-wrapper {
