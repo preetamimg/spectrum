@@ -1,0 +1,280 @@
+@include media-breakpoint(basic) {
+  @font-face {
+    font-family: 'Inter';
+    src: local('Inter ExtraBold'), local('Inter-ExtraBold'),
+        url('../fonts/Inter-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Inter-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter Black'), local('Inter-Black'),
+        url('../fonts/Inter-Black.woff2') format('woff2'),
+        url('../fonts/Inter-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter Bold'), local('Inter-Bold'),
+        url('../fonts/Inter-Bold.woff2') format('woff2'),
+        url('../fonts/Inter-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter SemiBold'), local('Inter-SemiBold'),
+        url('../fonts/Inter-SemiBold.woff2') format('woff2'),
+        url('../fonts/Inter-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter ExtraLight'), local('Inter-ExtraLight'),
+        url('../fonts/Inter-ExtraLight.woff2') format('woff2'),
+        url('../fonts/Inter-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter Medium'), local('Inter-Medium'),
+        url('../fonts/Inter-Medium.woff2') format('woff2'),
+        url('../fonts/Inter-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter Regular'), local('Inter-Regular'),
+        url('../fonts/Inter-Regular.woff2') format('woff2'),
+        url('../fonts/Inter-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter Light'), local('Inter-Light'),
+        url('../fonts/Inter-Light.woff2') format('woff2'),
+        url('../fonts/Inter-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter Thin'), local('Inter-Thin'),
+        url('../fonts/Inter-Thin.woff2') format('woff2'),
+        url('../fonts/Inter-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+
+  * {
+    &>* {
+      &::-webkit-scrollbar {}
+
+      &::-webkit-scrollbar-track {}
+
+      &::-webkit-scrollbar-thumb {}
+
+      &::-webkit-scrollbar-thumb:hover {}
+    }
+
+    &:hover>* {
+      &::-webkit-scrollbar-track {}
+
+      &::-webkit-scrollbar-thumb {}
+
+      &::-webkit-scrollbar-thumb:hover {}
+    }
+  }
+
+  [href*=javascript][target=_blank] {
+    pointer-events: none;
+  }
+  a.active[href],
+  a.accordion-button:not(.collapsed) {
+    pointer-events: none;
+  }
+  [data-scrollbar] {
+    & > canvas {
+      z-index: 1000;
+    }
+  }
+
+
+  body {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    outline: 0 !important;
+    display: block !important;
+    user-select: none !important;
+    font-family: 'Inter' !important;
+
+    & input,
+    & textarea,
+    & select {
+      user-select: auto;
+    }
+
+    & main {
+      width: 100vw !important;
+      max-width: none !important;
+      height: 100% !important;
+      margin: 0 !important;
+      position: relative !important;
+      overflow: hidden !important;
+      padding: 0px !important;
+
+      &>.mainInner {
+        height: 100% !important;
+        border: 0 !important;
+        position: relative !important;
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        outline: 0 !important;
+        overflow: hidden !important;
+        margin: 0px !important;
+        flex-wrap: nowrap;
+        &> [data-page-name] {
+          overflow: hidden auto;
+        }
+      }
+    }
+
+    & .overflow-hidden-auto {
+      overflow: hidden auto !important;
+    }
+
+    & .overflow-auto-hidden {
+      overflow: auto hidden !important;
+    }
+  }
+}
+
+
+
+
+// No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+@include media-breakpoint-up(sm) {
+}
+
+@include media-breakpoint-up(md) {
+  * {
+    &>* {
+      scrollbar-width: thin !important;
+      scrollbar-color: lighten($theme2, 2) !important;
+
+      &::-webkit-scrollbar {
+        width: .3em;
+        height: .3em;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: transparent;
+        border-radius: 50em;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: rgba($gray-500, .0);
+        border-radius: 50em;
+      }
+
+      &::-webkit-scrollbar-thumb:hover {
+        background: rgba($gray-400, .6);
+      }
+    }
+
+    &>* {
+      &>*:hover {
+        &::-webkit-scrollbar {
+          width: .3em;
+          height: .3em;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background: rgba($gray-500, .1);
+          border-radius: 50em;
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+          background: rgba($gray-400, .8);
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {
+}
+
+@include media-breakpoint-down(md) {}
+
+@include media-breakpoint-down(sm) {}
+
+[data-bs-theme=dark] {
+  @include dark-media-breakpoint(basic) {}
+
+  // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+  @include dark-media-breakpoint-up(sm) {}
+
+  @include dark-media-breakpoint-up(md) {}
+
+  @include dark-media-breakpoint-up(lg) {}
+
+  @include dark-media-breakpoint-up(xl) {}
+
+  @include dark-media-breakpoint-up(xxl) {}
+
+
+  @include dark-media-breakpoint-down(xxl) {}
+
+  @include dark-media-breakpoint-down(xl) {}
+
+  @include dark-media-breakpoint-down(lg) {}
+
+  @include dark-media-breakpoint-down(md) {}
+
+  @include dark-media-breakpoint-down(sm) {}
+}
