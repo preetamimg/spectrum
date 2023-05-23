@@ -32,15 +32,15 @@
                         & .callimge{
                             & img{
                                 height: 15px;
-                                filter: brightness(0.6);
+                                filter: brightness(0.4);
                                 margin-right: 8px;
                             }
                         }
-                        &:hover{
-                            & img{
-                                filter: brightness(1);
+                        & a {
+                            color: $black;
+                            &:hover {
+                                color: $theme1;
                             }
-                            color: $theme1;
                         }
                     }
                     & .contactusLeftBoxMail{
@@ -51,14 +51,14 @@
                             & img{
                                 height: 14px;
                                 margin-right: 8px;
-                                filter: brightness(0.6);
+                                filter: brightness(0.4);
                             }
                         }
-                        &:hover{
-                            & img{
-                                filter: brightness(1);
+                        & a {
+                            color: $black;
+                            &:hover {
+                                color: $theme1;
                             }
-                            color: $theme1;
                         }
                     }
                     & .contactusLeftBoxLocation{
@@ -69,14 +69,8 @@
                             & img{
                                 height: 20px;
                                 margin-right: 8px;
-                                filter: brightness(0.6);
+                                filter: brightness(0.4);
                             }
-                        }
-                        &:hover{
-                            & img{
-                                filter: brightness(1);
-                            }
-                            color: $theme1;
                         }
                     }
                 }
@@ -110,8 +104,9 @@
                         }
                     }
                     & .captchaBox{
-                        width: 280px;
-                        height: 70px;
+                        // width: 280px;
+                        height: 46px;
+                        margin-bottom: 8px;
                         overflow: hidden;
                         & .captchaImg{
                             width: 100%;
