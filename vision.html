@@ -287,6 +287,15 @@
 
         <script src="assets/libs/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script type="module" src="assets/js/main.min.js"></script>
-    
+        <script>
+            $('.bodyScrollPart').scroll(function () {
+                var scroll = $('.bodyScrollPart').scrollTop();
+                if (scroll <= 120) {
+                    $(".topNavbar").removeClass("nav-active");
+                } else {
+                    $(".topNavbar").addClass("nav-active");
+                }
+            });
+        </script>
     </body>
 </html>
