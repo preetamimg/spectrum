@@ -1,6 +1,12 @@
 // ? @@@@@@@@@@@@@@@@@@@@@@[  header start  ]@@@@@@@@@@@@@@@@@@@@@@
 @include media-breakpoint(basic) {
-  
+  .topNavbar {
+    & .logoBox {
+      & img {
+        height: 25px;
+      }
+    }
+  }
 }
 
 // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
