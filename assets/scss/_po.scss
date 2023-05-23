@@ -26,10 +26,35 @@
     @include media-breakpoint-down(sm) {}
 // }
 
-[data-bs-theme=dark] {
     // & [data-page-name=example] {
         @include dark-media-breakpoint(basic) {
-            
+            .certificateCard {
+                & .certificateImg {
+                    height: 250px;
+                    width: 100%;
+                    transition: all .5s;
+                    overflow: hidden;
+                    & img {
+                        aspect-ratio: 10/10;
+                        object-fit: contain;
+                        transition: all .5s;
+                    }
+                    &:hover {
+                        & img {
+                            transform: scale(109%);
+                        }
+                    }
+                }
+                & .certificateContent {
+                    text-align: center;
+                    & .certiTitle {
+
+                    }
+                    & .certiName {
+
+                    }
+                }
+            }
         }
 
         // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
@@ -56,7 +81,6 @@
         @include dark-media-breakpoint-down(sm) {
         }
     // }
-}
 
 // ! @@@@@@@@@@@@@@@@@@@@@@[  example start  ]@@@@@@@@@@@@@@@@@@@@@@
 

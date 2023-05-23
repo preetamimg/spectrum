@@ -83,9 +83,46 @@
             & .contant {
                 font-size: 16px;
                 line-height: 22px;
+                color: lighten($color: $black, $amount: 20);
             }
         }
     }
+    .topbreadcrumb {
+        & .innerSection {
+            & .pageheading {
+                font-size: 16px;
+                line-height: normal;
+            }
+            & .breadcrumb {
+                & .breadcrumb-item {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .contentSection {
+        & .innerSection {
+            & .loremContent {
+                font-size: 16px;
+                line-height: 24px;
+                color: lighten($black, 20);
+                &.loremHeading {
+                    font-size: 18px;
+                }
+            }
+            & .contentList {
+                & li {
+                    color: lighten($black, 20);
+                    font-size: 15px;
+                    padding-left: 8px;
+                    &::marker{
+                        content: '\2713';
+                    }
+                }
+            }
+        }
+    }
+    
 }
 @include media-breakpoint-down(xxl) {}
 
@@ -119,7 +156,24 @@
             }
             & .contant {
                 font-size: 14px;
-                line-height: 18px;
+                line-height: 20px;
+            }
+        }
+    }
+    .contentSection {
+        & .innerSection {
+            & .loremContent {
+                font-size: 14px;
+                line-height: 20px;
+                &.loremHeading {
+                    font-size: 16px;
+                }
+            }
+            & .contentList {
+                & li {
+                    font-size: 13px;
+                    padding-left: 8px;
+                }
             }
         }
     }
@@ -141,6 +195,19 @@
             }
         }
     }
+    .topbreadcrumb {
+        & .innerSection {
+            & .pageheading {
+                font-size: 14px;
+                line-height: normal;
+            }
+            & .breadcrumb {
+                & .breadcrumb-item {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
 }
 
 @include media-breakpoint-down(sm) {
@@ -155,7 +222,24 @@
             }
             & .contant {
                 font-size: 12px;
-                // line-height: 18px;
+                line-height: 18px;
+            }
+        }
+    }
+    .contentSection {
+        & .innerSection {
+            & .loremContent {
+                font-size: 12px;
+                line-height: 18px;
+                &.loremHeading {
+                    font-size: 14px;
+                }
+            }
+            & .contentList {
+                & li {
+                    font-size: 11px;
+                    padding-left: 6px;
+                }
             }
         }
     }
