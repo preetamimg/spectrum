@@ -31,7 +31,6 @@
         @include dark-media-breakpoint(basic) {
             
         }
-
         // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
         @include dark-media-breakpoint-up(sm) {
         }
@@ -60,3 +59,104 @@
 
 // ! @@@@@@@@@@@@@@@@@@@@@@[  example start  ]@@@@@@@@@@@@@@@@@@@@@@
 
+
+
+@include media-breakpoint(basic) {
+    .aboutTabSection{
+        & .innerSection {
+            & .headings {
+                font-size: 40px;
+                line-height: normal;
+                & span {
+                    position: relative;
+                    &::before{
+                        width: 60%;
+                        height: 4px;
+                        content: "";
+                        position: absolute;
+                        bottom: -3px;
+                        left: 0;
+                        background: $theme1;
+                    }
+                }
+            }
+            & .contant {
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+    }
+}
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {
+    .aboutTabSection{
+        & .innerSection {
+            & .headings {
+                font-size: 35px;
+                & span {
+                    &::before{
+                    }
+                }
+            }
+            & .contant {
+                // font-size: 14px;
+                // line-height: 22px;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+        .aboutTabSection{
+        & .innerSection {
+            & .headings {
+                font-size: 30px;
+                & span {
+                    &::before{
+                    }
+                }
+            }
+            & .contant {
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .aboutTabSection{
+        & .innerSection {
+            & .headings {
+                font-size: 25px;
+                & span {
+                    &::before{
+                    }
+                }
+            }
+            & .contant {
+                // font-size: 12px;
+                // line-height: 18px;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .aboutTabSection{
+        & .innerSection {
+            & .headings {
+                font-size: 22px;
+                & span {
+                    &::before{
+                    }
+                }
+            }
+            & .contant {
+                font-size: 12px;
+                // line-height: 18px;
+            }
+        }
+    }
+}
