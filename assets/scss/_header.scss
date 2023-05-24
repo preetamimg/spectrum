@@ -1,7 +1,6 @@
 // ? @@@@@@@@@@@@@@@@@@@@@@[  header start  ]@@@@@@@@@@@@@@@@@@@@@@
 @include media-breakpoint(basic) {
   .topNavbar {
-    border-bottom: 1px solid $gray-400;
     animation-name: fixedHeaderClose;
     animation-duration: .6s;
     transition: .4s all cubic-bezier(0.25, 0.1, 0, 1.7);
@@ -53,30 +52,31 @@
       }
     }
     &.nav-active {
-      background-color: $theme1;
+      background-color: $white;
       position: sticky;
+      z-index: 9;
       top: 0;
       animation-name: fixedHeader;
       animation-duration: .6s;
       & .logoBox {
         & img {
-          filter: brightness(100);
+          // filter: brightness(100);
         }
       }
       & .navLinks {
         & .navLink {
           & .navAnchor {
-            color: $white;
+            // color: $white;
             &::before {
-              background-color: $white;
-              opacity: 0.9;
+              // background-color: $white;
+              // opacity: 0.9;
             }
           }
         }
       }
       & .menuIcon {
         & img {
-          filter: brightness(100);
+          // filter: brightness(100);
         }
       }
     }
