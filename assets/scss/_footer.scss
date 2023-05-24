@@ -200,12 +200,54 @@
     }
     & .footerBottom {
       & .footerText {
+        font-size: 12px;
       }
     }
   }
 }
 
-@include media-breakpoint-down(sm) {}
+@include media-breakpoint-down(sm) {
+  .footerMain {
+    & .footerTop {
+      & .footerLogo {
+      }
+      & .footerText {
+        font-size: 12px;
+      }
+      & .socialIconsOuter {
+        & .socialIcons {
+          & img {
+          }
+          &:hover {
+            & img {
+            }
+          }
+        }
+      }
+      & .footerHeading {
+        font-size: 14px;
+      }
+      & .footerLinkOuter {
+        & ul {
+          & li {
+            &:last-child {
+            }
+          }
+        }
+        & .footerLinks {
+          font-size: 12px;
+          &:hover {
+          }
+        }
+      }
+    }
+    & .footerBottom {
+      & .footerText {
+        font-size: 10px;
+      }
+    }
+  }
+}
 
 [data-bs-theme=dark] {
   @include dark-media-breakpoint(basic) {
